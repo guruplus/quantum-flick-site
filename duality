@@ -1,11 +1,1 @@
-your-repo/
-├── index.html          # Homepage
-├── about.html         # About page
-├── events.html        # Events page
-├── articles.html      # Articles page
-├── contact.html       # Contact page
-├── css/
-│   └── style.css      # Main stylesheet
-├── js/
-│   └── main.js        # Main JavaScript
-└── images/            # Your images will go here
+
