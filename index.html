@@ -1,77 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aniruddha's Quantum Flick</title>
-  <!-- Bootstrap CSS CDN -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #6a9eff, #b0c4ff);
-      color: #20264d;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    header {
-      padding: 2rem 0;
-      text-align: center;
-      color: white;
-      background-color: rgba(32, 38, 77, 0.85);
-      margin-bottom: 2rem;
-      border-radius: 0 0 15px 15px;
-    }
-    header h1 {
-      margin-bottom: 0.5rem;
-    }
-    .btn-primary {
-      background-color: #20264d;
-      border-color: #20264d;
-    }
-    .btn-primary:hover {
-      background-color: #3d4b91;
-      border-color: #3d4b91;
-    }
-    .container {
-      max-width: 600px;
-      background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .qr-img {
-      display: block;
-      margin: 1rem auto;
-      max-width: 180px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science and Nonduality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Science and Nonduality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-<header>
-  <h1>Aniruddha's Quantum Flick</h1>
-  <p>Welcome to a new way of exploring science and time.</p>
-</header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Exploring the Nature of Reality</h2>
+            <p>Where science and spirituality meet</p>
+            <a href="events.html" class="btn">Upcoming Events</a>
+        </div>
+    </section>
 
-<div class="container text-center">
-  <section>
-    <h2>Payment</h2>
-    <img src="your-upi-qr-placeholder.png" alt="UPI QR Code" class="qr-img" />
-    <p>Scan to pay via UPI or use your mobile number.</p>
-    <a href="https://paypal.me/your-paypal-link" target="_blank" class="btn btn-primary mb-3">Pay via PayPal</a>
-  </section>
+    <section class="featured-content">
+        <div class="container">
+            <h2>Featured Articles</h2>
+            <div class="articles-grid">
+                <article class="card">
+                    <img src="images/article1.jpg" alt="Article image">
+                    <h3>The Quantum and the Absolute</h3>
+                    <p>Exploring parallels between quantum physics and ancient wisdom traditions...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="card">
+                    <img src="images/article2.jpg" alt="Article image">
+                    <h3>Consciousness as Fundamental</h3>
+                    <p>Why consciousness might be the ground of all being...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article class="card">
+                    <img src="images/article3.jpg" alt="Article image">
+                    <h3>Meditation and Neuroscience</h3>
+                    <p>How contemplative practices change brain structure and function...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Register</h2>
-    <p>Fill the registration form to get access to lectures.</p>
-    <a href="https://forms.gle/your-google-form-link" target="_blank" class="btn btn-primary">Register Here</a>
-  </section>
-</div>
+    <section class="upcoming-events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-list">
+                <div class="event">
+                    <div class="event-date">
+                        <span class="month">OCT</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual SAND Conference</h3>
+                        <p class="location">San Jose, California</p>
+                        <p class="description">Join us for our flagship event featuring leading scientists and spiritual teachers...</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <span class="month">NOV</span>
+                        <span class="day">05</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Online Retreat: The Nature of Mind</h3>
+                        <p class="location">Virtual Event</p>
+                        <p class="description">A deep dive into contemplative practices and their scientific validation...</p>
+                        <a href="#" class="btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="events.html" class="btn">View All Events</a>
+        </div>
+    </section>
 
-<!-- Bootstrap JS Bundle CDN (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest articles and event announcements</p>
+            <form>
+                <input type="email" placeholder="Your email address">
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h3>Science and Nonduality</h3>
+                    <p>Exploring the intersection of science, spirituality, and human experience.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Science and Nonduality. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
