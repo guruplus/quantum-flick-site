@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Science and Nonduality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Science and Nonduality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/events-bg.jpg');">
+        <div class="container">
+            <h1>Events & Gatherings</h1>
+            <p>Join our transformative in-person and online events</p>
+        </div>
+    </section>
+
+    <section class="events-container">
+        <div class="container">
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="conference">Conferences</button>
+                <button class="filter-btn" data-filter="retreat">Retreats</button>
+                <button class="filter-btn" data-filter="online">Online</button>
+            </div>
+
+            <div class="events-list">
+                <div class="event" data-category="conference">
+                    <div class="event-date">
+                        <span class="month">OCT</span>
+                        <span class="day">15-18</span>
+                        <span class="year">2023</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Annual SAND Conference</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> San Jose, California</p>
+                        <p class="description">Our flagship event featuring leading scientists, philosophers, and spiritual teachers exploring consciousness, physics, meditation, and more.</p>
+                        <div class="event-meta">
+                            <span class="price">From $350</span>
+                            <a href="#" class="btn-small">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event" data-category="online">
+                    <div class="event-date">
+                        <span class="month">NOV</span>
+                        <span class="day">05</span>
+                        <span class="year">2023</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>The Nature of Mind: Online Retreat</h3>
+                        <p class="location"><i class="fas fa-globe"></i> Virtual Event</p>
+                        <p class="description">A 3-day deep dive into contemplative neuroscience with guided meditations and interactive sessions.</p>
+                        <div class="event-meta">
+                            <span class="price">$75</span>
+                            <a href="#" class="btn-small">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event" data-category="retreat">
+                    <div class="event-date">
+                        <span class="month">JAN</span>
+                        <span class="day">12-19</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Silent Awareness Retreat</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Sedona, Arizona</p>
+                        <p class="description">A week-long silent retreat exploring nondual awareness in the stunning red rock landscape.</p>
+                        <div class="event-meta">
+                            <span class="price">$1,200 (all inclusive)</span>
+                            <a href="#" class="btn-small">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event" data-category="conference">
+                    <div class="event-date">
+                        <span class="month">MAY</span>
+                        <span class="day">20-23</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>SAND Europe</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Florence, Italy</p>
+                        <p class="description">Our European gathering featuring international speakers and workshops.</p>
+                        <div class="event-meta">
+                            <span class="price">Coming Soon</span>
+                            <a href="#" class="btn-small">Get Notified</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="past-events">
+                <h2>Past Events</h2>
+                <div class="past-events-grid">
+                    <div class="past-event">
+                        <img src="images/past-event1.jpg" alt="Past event">
+                        <h3>2022 Conference</h3>
+                        <a href="#" class="btn-small">Watch Recordings</a>
+                    </div>
+                    <div class="past-event">
+                        <img src="images/past-event2.jpg" alt="Past event">
+                        <h3>Quantum & Consciousness</h3>
+                        <a href="#" class="btn-small">Watch Recordings</a>
+                    </div>
+                    <div class="past-event">
+                        <img src="images/past-event3.jpg" alt="Past event">
+                        <h3>Meditation Science Retreat</h3>
+                        <a href="#" class="btn-small">Watch Recordings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <!-- Same newsletter section as index.html -->
+    </section>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Event filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    const events = document.querySelectorAll('.event');
+                    
+                    events.forEach(event => {
+                        if (filterValue === 'all' || event.getAttribute('data-category') === filterValue) {
+                            event.style.display = 'flex';
+                        } else {
+                            event.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
